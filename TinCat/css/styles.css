@@ -8,10 +8,10 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
-h2{
+h2 {
   font-family: "Montserrat";
   font-size: 3rem;
   line-height: 1.5;
@@ -36,6 +36,7 @@ h1 {
 }
 .nav-item {
   padding: 0 18px;
+  position: relative;
 }
 .nav-link {
   font-size: 1.2rem;
@@ -49,16 +50,18 @@ h1 {
 
 /* Title img */
 .titleimg {
-  width: 60%;
+  height: 700px;
+  width: 400px;
   transform: rotate(25deg);
-  z-index: -1;
+  position: absolute;
+  right: 500px;
 }
 /* Features */
 
 #features {
   padding: 7% 15%;
   background-color: white;
-  z-index: 0;
+  position: relative;
 }
 .feature-box {
   text-align: center;
@@ -83,42 +86,56 @@ p {
 
 /* Testimonial section */
 
-#testimonials{
+#testimonials {
   text-align: center;
   background-color: #62a334;
   color: white;
 }
-.testimonial-image{
-  margin: 20px;
-border-radius: 50%;
-width: 300px;
-height: 300px;
+.testimonial-image-garfild {
+  margin: 30px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.testimonial-image-mirjana {
+  margin: 30px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 
-#press{
+#press {
   background-color: #62a334;
   text-align: center;
   padding-bottom: 3%;
 }
-.presslogo{
+.presslogo {
   width: 15%;
   margin: 20px 20px 50px;
 }
 
-.carousel-item{
+.carousel-item {
   padding: 7% 15%;
 }
 
 /* Pricing */
-#pricing{
+#pricing {
   padding: 100px;
   text-align: center;
 }
 
-.pricing-column{
+.pricing-column {
   padding: 3% 2%;
 }
 
+@media (max-width: 1200px) {
+  #title {
+    text-align: center;
+  }
 
-/* Cards */
-
+  .titleimg {
+    margin: 20px 30px;
+    position: static;
+    transform: rotate(0);
+  }
+}
