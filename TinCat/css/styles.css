@@ -34,9 +34,11 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
+.navbar-items {
+  text-align: right;
+}
 .nav-item {
   padding: 0 18px;
-  position: relative;
 }
 .nav-link {
   font-size: 1.2rem;
@@ -138,4 +140,29 @@ p {
     position: static;
     transform: rotate(0);
   }
+}
+/* Call to action */
+#cta {
+  background-color: #62a334;
+  text-align: center;
+  color: white;
+  padding: 7% 15%;
+}
+.cta-text {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  margin: 0px auto;
+  padding: 5% 0px 5%;
+}
+.btn-cta {
+  margin: 15px;
+}
+/* Footer */
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+.fa-icons {
+  margin: 20px 10px;
 }
